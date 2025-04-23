@@ -144,7 +144,454 @@ const courses = {
       }
     ]
   },
-  // Add other courses here...
+  'mern-stack': {
+    id: 'mern-stack',
+    title: 'MERN Stack Development',
+    description: 'Master MongoDB, Express.js, React, and Node.js to build modern web applications',
+    duration: '5 months',
+    students: '450+',
+    modules: '10',
+    rating: '4.8',
+    icon: '🚀',
+    color: 'from-purple-600 to-purple-800',
+    previewVideo: 'https://www.youtube.com/embed/example1',
+    features: [
+      'MongoDB & Mongoose',
+      'Express.js & Node.js',
+      'React.js & Redux',
+      'RESTful APIs',
+      'Authentication & Authorization',
+      'Real-time Applications',
+      'Deployment & DevOps',
+      'Testing & Debugging'
+    ],
+    highlights: [
+      'Industry-relevant curriculum',
+      'Live project experience',
+      'Expert mentorship',
+      'Placement assistance',
+      'Lifetime access to materials'
+    ],
+    price: {
+      original: '₹40,000',
+      discounted: '₹32,000',
+      savings: '₹8,000'
+    },
+    curriculum: [
+      {
+        title: 'JavaScript Fundamentals',
+        duration: '3 weeks',
+        topics: [
+          'ES6+ Features',
+          'Async Programming',
+          'DOM Manipulation',
+          'Error Handling',
+          'Modern JavaScript'
+        ]
+      },
+      {
+        title: 'Node.js & Express',
+        duration: '4 weeks',
+        topics: [
+          'Node.js Basics',
+          'Express Framework',
+          'Middleware',
+          'RESTful APIs',
+          'Error Handling'
+        ]
+      },
+      {
+        title: 'MongoDB & Database',
+        duration: '3 weeks',
+        topics: [
+          'MongoDB Basics',
+          'Mongoose ODM',
+          'Data Modeling',
+          'Aggregation',
+          'Indexing'
+        ]
+      },
+      {
+        title: 'React.js & Redux',
+        duration: '5 weeks',
+        topics: [
+          'React Fundamentals',
+          'Hooks & Context',
+          'Redux State Management',
+          'React Router',
+          'Component Lifecycle'
+        ]
+      }
+    ],
+    projects: [
+      {
+        title: 'E-commerce Platform',
+        description: 'Build a full-featured e-commerce platform with real-time updates and payment integration'
+      },
+      {
+        title: 'Social Media App',
+        description: 'Create a social media application with real-time chat and notifications'
+      },
+      {
+        title: 'Task Management System',
+        description: 'Develop a collaborative task management system with real-time updates'
+      }
+    ],
+    instructors: [
+      {
+        name: 'Alex Johnson',
+        role: 'Senior MERN Developer',
+        experience: '7+ years',
+        image: '/instructors/alex.jpg',
+        bio: 'Alex has worked with leading tech companies and specializes in building scalable MERN applications.'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'Sarah Williams',
+        role: 'Full Stack Developer',
+        company: 'Tech Innovations',
+        image: '/testimonials/sarah.jpg',
+        content: 'The MERN Stack course provided me with all the skills needed to build modern web applications. The hands-on projects were particularly valuable.'
+      }
+    ]
+  },
+  'python-fullstack': {
+    id: 'python-fullstack',
+    title: 'Python Full Stack Development',
+    description: 'Master Python, Django, React, and PostgreSQL to build robust web applications',
+    duration: '6 months',
+    students: '400+',
+    modules: '12',
+    rating: '4.7',
+    icon: '🐍',
+    color: 'from-green-600 to-green-800',
+    previewVideo: 'https://www.youtube.com/embed/example2',
+    features: [
+      'Python Programming',
+      'Django Framework',
+      'React.js & Redux',
+      'PostgreSQL',
+      'RESTful APIs',
+      'Authentication',
+      'Testing & Debugging',
+      'Deployment'
+    ],
+    highlights: [
+      'Industry-relevant curriculum',
+      'Live project experience',
+      'Expert mentorship',
+      'Placement assistance',
+      'Lifetime access to materials'
+    ],
+    price: {
+      original: '₹38,000',
+      discounted: '₹30,000',
+      savings: '₹8,000'
+    },
+    curriculum: [
+      {
+        title: 'Python Fundamentals',
+        duration: '4 weeks',
+        topics: [
+          'Python Basics',
+          'OOP in Python',
+          'Data Structures',
+          'File Handling',
+          'Error Handling'
+        ]
+      },
+      {
+        title: 'Django Framework',
+        duration: '5 weeks',
+        topics: [
+          'Django Basics',
+          'Models & ORM',
+          'Views & Templates',
+          'Forms & Validation',
+          'Admin Interface'
+        ]
+      },
+      {
+        title: 'Frontend Development',
+        duration: '4 weeks',
+        topics: [
+          'HTML5 & CSS3',
+          'JavaScript',
+          'React.js',
+          'Redux',
+          'Material UI'
+        ]
+      },
+      {
+        title: 'Database & APIs',
+        duration: '4 weeks',
+        topics: [
+          'PostgreSQL',
+          'Django REST Framework',
+          'API Design',
+          'Authentication',
+          'Testing'
+        ]
+      }
+    ],
+    projects: [
+      {
+        title: 'Blog Platform',
+        description: 'Build a full-featured blog platform with user authentication and content management'
+      },
+      {
+        title: 'E-learning System',
+        description: 'Create an e-learning platform with course management and student progress tracking'
+      },
+      {
+        title: 'Inventory Management',
+        description: 'Develop an inventory management system with real-time updates and reporting'
+      }
+    ],
+    instructors: [
+      {
+        name: 'Michael Chen',
+        role: 'Python Developer',
+        experience: '8+ years',
+        image: '/instructors/michael.jpg',
+        bio: 'Michael is a Python expert with extensive experience in Django and full-stack development.'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'David Kumar',
+        role: 'Python Developer',
+        company: 'Digital Solutions',
+        image: '/testimonials/david.jpg',
+        content: 'The Python Full Stack course gave me a solid foundation in both backend and frontend development. The projects were challenging and practical.'
+      }
+    ]
+  },
+  'data-science': {
+    id: 'data-science',
+    title: 'Data Science & Machine Learning',
+    description: 'Master Python, Statistics, Machine Learning, and Data Analysis to become a Data Scientist',
+    duration: '8 months',
+    students: '350+',
+    modules: '15',
+    rating: '4.9',
+    icon: '📊',
+    color: 'from-orange-600 to-orange-800',
+    previewVideo: 'https://www.youtube.com/embed/example3',
+    features: [
+      'Python Programming',
+      'Statistics & Probability',
+      'Machine Learning',
+      'Deep Learning',
+      'Data Visualization',
+      'Big Data Tools',
+      'Natural Language Processing',
+      'Model Deployment'
+    ],
+    highlights: [
+      'Industry-relevant curriculum',
+      'Real-world projects',
+      'Expert mentorship',
+      'Placement assistance',
+      'Lifetime access to materials'
+    ],
+    price: {
+      original: '₹50,000',
+      discounted: '₹40,000',
+      savings: '₹10,000'
+    },
+    curriculum: [
+      {
+        title: 'Python for Data Science',
+        duration: '4 weeks',
+        topics: [
+          'Python Basics',
+          'NumPy & Pandas',
+          'Data Cleaning',
+          'Data Visualization',
+          'Statistical Analysis'
+        ]
+      },
+      {
+        title: 'Machine Learning',
+        duration: '6 weeks',
+        topics: [
+          'Supervised Learning',
+          'Unsupervised Learning',
+          'Model Evaluation',
+          'Feature Engineering',
+          'Hyperparameter Tuning'
+        ]
+      },
+      {
+        title: 'Deep Learning',
+        duration: '5 weeks',
+        topics: [
+          'Neural Networks',
+          'TensorFlow & Keras',
+          'CNN & RNN',
+          'Transfer Learning',
+          'Model Deployment'
+        ]
+      },
+      {
+        title: 'Advanced Topics',
+        duration: '4 weeks',
+        topics: [
+          'Natural Language Processing',
+          'Computer Vision',
+          'Time Series Analysis',
+          'Big Data Tools',
+          'Model Deployment'
+        ]
+      }
+    ],
+    projects: [
+      {
+        title: 'Customer Churn Prediction',
+        description: 'Build a machine learning model to predict customer churn and identify key factors'
+      },
+      {
+        title: 'Image Classification',
+        description: 'Create a deep learning model for image classification using CNN'
+      },
+      {
+        title: 'Sentiment Analysis',
+        description: 'Develop an NLP model for sentiment analysis of customer reviews'
+      }
+    ],
+    instructors: [
+      {
+        name: 'Dr. Emily Wilson',
+        role: 'Data Scientist',
+        experience: '10+ years',
+        image: '/instructors/emily.jpg',
+        bio: 'Dr. Wilson has extensive experience in machine learning and data science, having worked with leading tech companies.'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'Priya Sharma',
+        role: 'Data Scientist',
+        company: 'AI Solutions',
+        image: '/testimonials/priya.jpg',
+        content: 'The Data Science course provided me with a comprehensive understanding of machine learning and data analysis. The hands-on projects were invaluable.'
+      }
+    ]
+  },
+  'data-analytics': {
+    id: 'data-analytics',
+    title: 'Data Analytics & Business Intelligence',
+    description: 'Master data analysis, visualization, and business intelligence tools to drive data-driven decisions',
+    duration: '4 months',
+    students: '300+',
+    modules: '8',
+    rating: '4.7',
+    icon: '📈',
+    color: 'from-blue-600 to-blue-800',
+    previewVideo: 'https://www.youtube.com/embed/example4',
+    features: [
+      'SQL & Database',
+      'Data Visualization',
+      'Business Intelligence',
+      'Statistical Analysis',
+      'Excel & Power BI',
+      'Tableau',
+      'Data Storytelling',
+      'Dashboard Creation'
+    ],
+    highlights: [
+      'Industry-relevant curriculum',
+      'Real-world projects',
+      'Expert mentorship',
+      'Placement assistance',
+      'Lifetime access to materials'
+    ],
+    price: {
+      original: '₹35,000',
+      discounted: '₹28,000',
+      savings: '₹7,000'
+    },
+    curriculum: [
+      {
+        title: 'Data Analysis Fundamentals',
+        duration: '3 weeks',
+        topics: [
+          'Excel Advanced',
+          'Statistical Analysis',
+          'Data Cleaning',
+          'Data Transformation',
+          'Basic SQL'
+        ]
+      },
+      {
+        title: 'Data Visualization',
+        duration: '4 weeks',
+        topics: [
+          'Tableau Basics',
+          'Power BI',
+          'Dashboard Design',
+          'Interactive Reports',
+          'Data Storytelling'
+        ]
+      },
+      {
+        title: 'Business Intelligence',
+        duration: '4 weeks',
+        topics: [
+          'Advanced SQL',
+          'ETL Processes',
+          'Data Warehousing',
+          'Business Metrics',
+          'KPI Analysis'
+        ]
+      },
+      {
+        title: 'Advanced Analytics',
+        duration: '3 weeks',
+        topics: [
+          'Predictive Analytics',
+          'Time Series Analysis',
+          'Customer Analytics',
+          'Market Analysis',
+          'Report Automation'
+        ]
+      }
+    ],
+    projects: [
+      {
+        title: 'Sales Analytics Dashboard',
+        description: 'Create an interactive dashboard to analyze sales performance and trends'
+      },
+      {
+        title: 'Customer Behavior Analysis',
+        description: 'Analyze customer behavior patterns and create actionable insights'
+      },
+      {
+        title: 'Market Research Report',
+        description: 'Develop a comprehensive market research report with data visualization'
+      }
+    ],
+    instructors: [
+      {
+        name: 'Robert Taylor',
+        role: 'Business Intelligence Expert',
+        experience: '9+ years',
+        image: '/instructors/robert.jpg',
+        bio: 'Robert specializes in business intelligence and data analytics, helping companies make data-driven decisions.'
+      }
+    ],
+    testimonials: [
+      {
+        name: 'Anita Patel',
+        role: 'Business Analyst',
+        company: 'Global Analytics',
+        image: '/testimonials/anita.jpg',
+        content: 'The Data Analytics course provided me with practical skills in data visualization and business intelligence. The projects were directly applicable to my work.'
+      }
+    ]
+  }
 };
 
 export default function CourseDetail() {
@@ -443,4 +890,4 @@ export default function CourseDetail() {
       </section>
     </div>
   );
-} 
+}
