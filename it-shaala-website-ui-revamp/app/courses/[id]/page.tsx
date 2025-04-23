@@ -601,16 +601,16 @@ export default function CourseDetail() {
 
   if (!course) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h1 className="text-2xl font-bold text-gray-900">Course not found</h1>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <h1 className="text-3xl font-bold text-red-500">Oops, ⚠️ Course not found!!!</h1>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mt-20">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative py-10 pb-20 overflow-hidden">
         <div className={`absolute inset-0 bg-gradient-to-r ${course.color}`}></div>
         <div className="absolute inset-0 bg-black/20"></div>
         

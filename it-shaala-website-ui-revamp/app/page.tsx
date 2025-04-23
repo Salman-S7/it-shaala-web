@@ -1,11 +1,11 @@
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Features from "./components/features";
-import Courses from "./components/courses";
-import FreeResources from "./components/free-resources";
-import Testimonials from "./components/testimonials";
-import FAQ from "./components/faq";
-import CTA from "./components/cta";
+import Header from "./components/layout/header";
+import Hero from "./components/sections/hero";
+import Features from "./components/sections/features";
+import Courses from "./components/features/courses";
+import FreeResources from "./components/sections/free-resources";
+import Testimonials from "./components/sections/testimonials";
+import FAQ from "./components/sections/faq";
+import CTA from "./components/sections/cta";
 
 export default function Home() {
   return (

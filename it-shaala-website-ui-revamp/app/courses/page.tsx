@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Clock, Users, BookOpen, Star, Trophy, Briefcase, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import FAQ from '../components/faq';
-import WhyChooseUs from '../components/why-choose-us';
-import Features from '../components/features';
-import CTA from '../components/cta';
-import CourseCard from '../components/course-card';
+import FAQ from '../components/sections/faq';
+import WhyChooseUs from '../components/sections/why-choose-us';
+import Features from '../components/sections/features';
+import CTA from '../components/sections/cta';
+import CourseCard from '../components/ui/course-card';
 
 const courses = [
   {
@@ -208,7 +208,7 @@ export default function Courses() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative pt-56 pb-20 overflow-hidden">
+      <section className="relative pt-54 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-purple-50"></div>
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl"></div>

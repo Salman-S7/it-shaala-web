@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import CourseCard from './course-card';
+import CourseCard from '../ui/course-card';
 
 const courses = [
   {
