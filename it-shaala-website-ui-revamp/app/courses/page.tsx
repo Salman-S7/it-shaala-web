@@ -181,29 +181,7 @@ const courses = [
 export default function Courses() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  const testimonials = [
-    {
-      name: 'Rahul Sharma',
-      role: 'Java Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      image: '/testimonials/rahul.jpg',
-      content: 'The Java Full Stack course transformed my career. The hands-on projects and expert guidance helped me land my dream job within 2 months of completing the course.'
-    },
-    {
-      name: 'Priya Patel',
-      role: 'Data Scientist',
-      company: 'AI Innovations',
-      image: '/testimonials/priya.jpg',
-      content: 'The Data Science program was comprehensive and practical. The instructors were industry experts who provided valuable insights and real-world experience.'
-    },
-    {
-      name: 'Amit Kumar',
-      role: 'MERN Stack Developer',
-      company: 'Digital Solutions',
-      image: '/testimonials/amit.jpg',
-      content: 'The MERN Stack course gave me the confidence to build full-stack applications. The project-based learning approach was extremely effective.'
-    }
-  ];
+  
 
   return (
     <div className="min-h-screen bg-gray-50">

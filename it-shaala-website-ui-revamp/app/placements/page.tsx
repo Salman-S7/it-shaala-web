@@ -1,14 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { 
-  Briefcase, 
-  GraduationCap, 
-  Users, 
-  TrendingUp, 
-  Star, 
-  Building2, 
-  Award, 
+import {
+  Briefcase,
+  GraduationCap,
+  Users,
+  TrendingUp,
+  Star,
+  Building2,
+  Award,
   CheckCircle2,
   FileText,
   Code,
@@ -17,6 +17,9 @@ import {
   ChevronRight
 } from 'lucide-react';
 import Link from 'next/link';
+import CTA from '../components/sections/cta';
+import HiringPartnersMarquee from '../components/sections/hiring-partners';
+
 
 const placementStats = [
   {
@@ -72,16 +75,43 @@ const successStories = [
   }
 ];
 
-const hiringPartners = [
-  { name: "TCS", logo: "/companies/tcs.png" },
-  { name: "Infosys", logo: "/companies/infosys.png" },
-  { name: "Wipro", logo: "/companies/wipro.png" },
-  { name: "Accenture", logo: "/companies/accenture.png" },
-  { name: "Cognizant", logo: "/companies/cognizant.png" },
-  { name: "HCL", logo: "/companies/hcl.png" },
-  { name: "Tech Mahindra", logo: "/companies/tech-mahindra.png" },
-  { name: "IBM", logo: "/companies/ibm.png" }
+export type HiringPartner = {
+  name: string;
+  logo: string;
+};
+
+const hiringPartners: HiringPartner[] = [
+  {
+    name: "Deloitte",
+    logo: "/deloitte.png"
+
+  },
+  {
+    name: "Infosys",
+    logo: "/infosys.png"
+
+  },
+  {
+    name: "Capgemini",
+    logo: "/capgemini.png"
+
+  },
+  {
+    name: "Accenture",
+    logo: "/accenture.png"
+
+  },
+  {
+    name: "Genpact",
+    logo: "/genpact.png"
+
+  },
+  {
+    name: "IBM",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+  }
 ];
+
 
 const placementProcess = [
   {
@@ -126,8 +156,8 @@ export default function Placements() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white mt-20">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-5"></div>
+      <section className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-100">
+        <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10 pointer-events-none"></div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -146,13 +176,13 @@ export default function Placements() {
                 Join our community of successful professionals who have transformed their careers through our comprehensive training and placement support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link 
-                  href="/courses" 
+                <Link
+                  href="/courses"
                   className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   Explore Courses <ArrowRight className="w-5 h-5" />
                 </Link>
-                <button 
+                <button
                   className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl border border-gray-200"
                 >
                   View Placements <ChevronRight className="w-5 h-5" />
@@ -162,6 +192,7 @@ export default function Placements() {
           </div>
         </div>
       </section>
+
 
       {/* Stats Section */}
       <section className="py-20">
@@ -191,7 +222,7 @@ export default function Placements() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Success <span className='text-blue-600'>Stories</span></h2>
             <p className="text-xl text-gray-600">
               Hear from our students who have successfully placed in top companies
             </p>
@@ -226,39 +257,13 @@ export default function Placements() {
       </section>
 
       {/* Hiring Partners */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Hiring Partners</h2>
-            <p className="text-xl text-gray-600">
-              We partner with leading companies to provide excellent placement opportunities
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {hiringPartners.map((company, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-2xl shadow-lg p-8 flex items-center justify-center hover:shadow-xl transition-shadow duration-300"
-              >
-                <img
-                  src={company.logo}
-                  alt={company.name}
-                  className="max-h-12 max-w-full grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HiringPartnersMarquee hiringPartners={hiringPartners} />
 
       {/* Placement Process */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Placement Process</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our <span className='text-blue-600'>Placement Process</span></h2>
             <p className="text-xl text-gray-600">
               A comprehensive approach to ensure your career success
             </p>
@@ -287,27 +292,8 @@ export default function Placements() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800">
-          <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10"></div>
-        </div>
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Career Journey?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Join our courses and get placed in top companies
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/courses" className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                Explore Courses <ArrowRight className="w-5 h-5" />
-              </Link>
-              <button className="bg-blue-500/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-500/30 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                Contact Us <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTA />
+
     </div>
   );
 } 

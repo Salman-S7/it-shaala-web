@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { courseLinks } from '@/app/data/header';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,11 +32,6 @@ const Header = () => {
     setIsCoursesOpen(!isCoursesOpen);
   };
 
-  const courseLinks = [
-    { name: 'Java Full Stack', href: '/courses/java-fullstack' },
-    { name: 'MERN Stack', href: '/courses/mern-stack' },
-    { name: 'Python Full Stack', href: '/courses/python-fullstack' },
-  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">

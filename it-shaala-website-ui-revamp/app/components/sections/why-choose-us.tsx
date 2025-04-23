@@ -1,3 +1,5 @@
+// we are not using this component for now the why choose is is coming from the features section
+
 'use client';
 
 import { Briefcase, Trophy, Users } from 'lucide-react';
@@ -33,6 +35,8 @@ const features = [
     description: "Get dedicated placement assistance and career guidance"
   }
 ];
+
+
 
 export default function WhyChooseUs() {
   return (
