@@ -16,7 +16,12 @@ export default function Home() {
       <FreeResources />
       <Testimonials />
       <FAQ />
-      <CTA />
+      <CTA 
+        title="Ready to Start Your Tech Journey?"
+        description="Join hundreds of successful students who have transformed their careers with IT Shaala"
+        buttonText="Enroll Now"
+        buttonLink="/enroll"
+      />
     </main>
   );
 }

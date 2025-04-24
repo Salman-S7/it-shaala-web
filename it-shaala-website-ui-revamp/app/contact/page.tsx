@@ -93,7 +93,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <CTA />
+      <CTA 
+        title="Have More Questions?"
+        description="Our team is here to help you with any queries about our courses and career opportunities."
+        buttonText="Chat With Us"
+        buttonLink="#contact-form"
+      />
 
     </main>
   );

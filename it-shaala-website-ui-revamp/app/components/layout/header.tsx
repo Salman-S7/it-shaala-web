@@ -4,11 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import EnrollmentForm from '../modals/enrollment-form';
 import { courseLinks } from '@/app/data/header';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const [showEnrollForm, setShowEnrollForm] = useState(false);
   const coursesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,7 +33,6 @@ const Header = () => {
   const toggleCourses = () => {
     setIsCoursesOpen(!isCoursesOpen);
   };
-
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
@@ -99,18 +100,22 @@ const Header = () => {
               <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                 About Us
               </Link>
-              <Link href="/gallery" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Gallery
+              <Link href="/hire-from-us" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Hire From Us
               </Link>
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                 Contact Us
               </Link>
-              <Link 
-                href="/enroll" 
+              <button
+                onClick={() => setShowEnrollForm(true)}
                 className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-colors font-medium shadow-sm hover:shadow-md"
               >
                 Enroll Now
-              </Link>
+              </button>
+              <EnrollmentForm 
+                isOpen={showEnrollForm} 
+                onClose={() => setShowEnrollForm(false)} 
+              />
             </div>
           </nav>
 
@@ -211,11 +216,11 @@ const Header = () => {
                     About Us
                   </Link>
                   <Link 
-                    href="/gallery" 
+                    href="/hire-from-us" 
                     className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-colors font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Gallery
+                    Hire From Us
                   </Link>
                   <Link 
                     href="/contact" 
@@ -225,13 +230,15 @@ const Header = () => {
                     Contact Us
                   </Link>
                   <div className="px-4 pt-2">
-                    <Link 
-                      href="/enroll" 
+                    <button
                       className="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-sm hover:shadow-md"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setShowEnrollForm(true);
+                      }}
                     >
                       Enroll Now
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </nav>

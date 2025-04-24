@@ -3,7 +3,14 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function CTA() {
+interface CTAProps {
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+}
+
+export default function CTA({ title, description, buttonText, buttonLink }: CTAProps) {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background elements */}
@@ -21,10 +28,10 @@ export default function CTA() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Start Your <span className="text-blue-600">Tech Journey</span>?
+              {title}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Join hundreds of successful students who have transformed their careers with IT Shaala
+              {description}
             </p>
           </motion.div>
 
@@ -65,17 +72,16 @@ export default function CTA() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
               >
-                Enroll Now
+                {buttonText}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <a
+                href={buttonLink}
                 className="px-8 py-4 bg-white text-gray-900 rounded-xl font-semibold border border-gray-200 flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
               >
-                Schedule a Call
+                View More
                 <ArrowRight className="w-5 h-5" />
-              </motion.button>
+              </a>
             </div>
           </motion.div>
 

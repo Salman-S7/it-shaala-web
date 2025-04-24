@@ -280,7 +280,12 @@ export default function Placements() {
       </section>
 
       {/* CTA Section */}
-      <CTA />
+      <CTA 
+        title="Ready to Launch Your Career?"
+        description="Join IT Shaala and get placed in top tech companies."
+        buttonText="Start Learning"
+        buttonLink="/enroll"
+      />
 
     </div>
   );

@@ -72,15 +72,21 @@ export default function OurStory() {
 
         {/* Timeline */}
         <div className="max-w-4xl mx-auto relative">
-          <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-200"></div>
+          {/* Timeline line - hidden on mobile, centered on desktop */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-200"></div>
+          {/* Mobile timeline line - left aligned */}
+          <div className="md:hidden absolute left-6 top-0 h-full w-0.5 bg-gray-200"></div>
           
           {timeline.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={index} className={`relative flex items-center mb-12 ${
-                index % 2 === 0 ? 'justify-start' : 'justify-end'
-              }`}>
-                <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8 order-last'}`}>
+              <div 
+                key={index} 
+                className="relative flex items-start mb-12 md:even:flex-row-reverse"
+              >
+                {/* Content */}
+                <div className="pl-16 md:pl-0 md:w-5/12 md:even:pl-8 md:odd:pr-8 md:odd:text-right">
+
                   <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                     <span className="text-blue-600 font-semibold">{item.year}</span>
                     <h3 className="text-xl font-semibold text-gray-900 mt-1 mb-2">{item.title}</h3>
@@ -88,7 +94,8 @@ export default function OurStory() {
                   </div>
                 </div>
                 
-                <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                {/* Icon */}
+                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                     <Icon className="w-6 h-6 text-blue-600" />
                   </div>
