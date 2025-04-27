@@ -1,8 +1,16 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Clock, Users, BookOpen, Star, Trophy } from 'lucide-react';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  Users,
+  BookOpen,
+  Star,
+  Trophy,
+} from "lucide-react";
+import Link from "next/link";
 
 interface Course {
   id: string;
@@ -29,7 +37,11 @@ interface CourseCardProps {
   className?: string;
 }
 
-export default function CourseCard({ course, index = 0, className = '' }: CourseCardProps) {
+export default function CourseCard({
+  course,
+  index = 0,
+  className = "",
+}: CourseCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -58,7 +70,9 @@ export default function CourseCard({ course, index = 0, className = '' }: Course
         </div>
         <div className="text-center">
           <Users className="w-6 h-6 text-gray-500 mx-auto" />
-          <p className="text-sm text-gray-600 mt-1">{course.students} Students</p>
+          <p className="text-sm text-gray-600 mt-1">
+            {course.students} Students
+          </p>
         </div>
         <div className="text-center">
           <BookOpen className="w-6 h-6 text-gray-500 mx-auto" />
@@ -68,7 +82,9 @@ export default function CourseCard({ course, index = 0, className = '' }: Course
 
       {/* Course Features */}
       <div className="p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">What You'll Learn</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          What You&apos;ll Learn
+        </h3>
         <ul className="space-y-3">
           {course.features.map((feature, i) => (
             <li key={i} className="flex items-start">
@@ -81,7 +97,9 @@ export default function CourseCard({ course, index = 0, className = '' }: Course
 
       {/* Course Highlights */}
       <div className="p-6 bg-gray-50">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Course Highlights</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          Course Highlights
+        </h3>
         <ul className="space-y-3">
           {course.highlights.map((highlight, i) => (
             <li key={i} className="flex items-start">
@@ -96,22 +114,26 @@ export default function CourseCard({ course, index = 0, className = '' }: Course
       <div className="p-6 border-t">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <span className="text-2xl font-bold text-gray-900">{course.price.discounted}</span>
-            <span className="text-gray-500 line-through ml-2">{course.price.original}</span>
+            <span className="text-2xl font-bold text-gray-900">
+              {course.price.discounted}
+            </span>
+            <span className="text-gray-500 line-through ml-2">
+              {course.price.original}
+            </span>
           </div>
-          <span className="text-green-600 font-semibold">Save {course.price.savings}</span>
+          <span className="text-green-600 font-semibold">
+            Save {course.price.savings}
+          </span>
         </div>
         <div className="space-y-3">
-          <Link 
+          <Link
             href={`/courses/${course.id}`}
             className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
           >
             Explore Course
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <button 
-            className="w-full bg-gradient-to-r from-green-600 to-green-800 text-white py-3 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
-          >
+          <button className="w-full bg-gradient-to-r from-green-600 to-green-800 text-white py-3 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow">
             Enroll Now
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -119,4 +141,4 @@ export default function CourseCard({ course, index = 0, className = '' }: Course
       </div>
     </motion.div>
   );
-} 
+}

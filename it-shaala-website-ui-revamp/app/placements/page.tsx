@@ -8,10 +8,8 @@ import {
   Award,
   CheckCircle2,
   FileText,
-  Target,
   Building2,
   GraduationCap,
-  Briefcase,
   Code,
   MessageSquare,
   ArrowRight,
@@ -49,32 +47,32 @@ const placementStats = [
   }
 ];
 
-const successStories = [
-  {
-    name: "Rahul Sharma",
-    role: "Software Engineer",
-    company: "Tech Solutions Inc.",
-    image: "/placements/rahul.jpg",
-    package: "₹12 LPA",
-    testimonial: "The training and placement support at IT Shaala helped me land my dream job. The mock interviews and resume building sessions were particularly helpful."
-  },
-  {
-    name: "Priya Patel",
-    role: "Data Scientist",
-    company: "AI Innovations",
-    image: "/placements/priya.jpg",
-    package: "₹15 LPA",
-    testimonial: "The practical projects and industry-relevant curriculum prepared me well for technical interviews. The placement team's guidance was invaluable."
-  },
-  {
-    name: "Amit Kumar",
-    role: "Full Stack Developer",
-    company: "Digital Solutions",
-    image: "/placements/amit.jpg",
-    package: "₹10 LPA",
-    testimonial: "The placement assistance and interview preparation sessions gave me the confidence to crack multiple job offers. Thank you IT Shaala!"
-  }
-];
+// const successStories = [
+//   {
+//     name: "Rahul Sharma",
+//     role: "Software Engineer",
+//     company: "Tech Solutions Inc.",
+//     image: "/placements/rahul.jpg",
+//     package: "₹12 LPA",
+//     testimonial: "The training and placement support at IT Shaala helped me land my dream job. The mock interviews and resume building sessions were particularly helpful."
+//   },
+//   {
+//     name: "Priya Patel",
+//     role: "Data Scientist",
+//     company: "AI Innovations",
+//     image: "/placements/priya.jpg",
+//     package: "₹15 LPA",
+//     testimonial: "The practical projects and industry-relevant curriculum prepared me well for technical interviews. The placement team's guidance was invaluable."
+//   },
+//   {
+//     name: "Amit Kumar",
+//     role: "Full Stack Developer",
+//     company: "Digital Solutions",
+//     image: "/placements/amit.jpg",
+//     package: "₹10 LPA",
+//     testimonial: "The placement assistance and interview preparation sessions gave me the confidence to crack multiple job offers. Thank you IT Shaala!"
+//   }
+// ];
 
 export type HiringPartner = {
   name: string;

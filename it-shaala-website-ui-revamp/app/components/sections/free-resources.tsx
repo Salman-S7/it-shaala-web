@@ -1,6 +1,6 @@
 'use client';
 
-import { PlayCircle, Youtube, Clock, ThumbsUp, Eye, ArrowRight } from 'lucide-react';
+import { PlayCircle, Youtube, ThumbsUp, Eye, ArrowRight } from 'lucide-react';
 import { videos } from '@/app/data/free-resources';
 
 export default function FreeResources() {

@@ -1,9 +1,8 @@
-'use client';
+"use client";
 
-import { Star, Quote } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import { testimonials } from '@/app/data/testimonials';
-
+import { Star, Quote } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { testimonials } from "@/app/data/testimonials";
 
 export default function Testimonials() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,38 +37,33 @@ export default function Testimonials() {
     <section className="py-24 relative overflow-hidden">
       {/* Main background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-purple-50"></div>
-      
+
       {/* Decorative gradient orbs */}
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-100/20 to-purple-100/20 rounded-full blur-3xl"></div>
-      
+
       {/* Decorative grid pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Student <span className="text-blue-600">Success Stories</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Hear from our students who transformed their careers through our courses
+            Hear from our students who transformed their careers through our
+            courses
           </p>
         </div>
 
-        <div 
-          ref={containerRef}
-          className="relative overflow-hidden"
-        >
-          <div 
-            ref={contentRef}
-            className="flex space-x-6"
-          >
+        <div ref={containerRef} className="relative overflow-hidden">
+          <div ref={contentRef} className="flex space-x-6">
             {/* First set of testimonials */}
             {testimonials.map((testimonial, index) => (
-              <div 
+              <div
                 key={`first-${index}`}
                 className="flex-shrink-0 w-[350px] group bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden hover:-translate-y-1 p-6"
               >
@@ -85,17 +79,26 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-base font-semibold text-gray-900">{testimonial.name}</h3>
-                    <p className="text-xs text-gray-500">{testimonial.role} at {testimonial.company}</p>
+                    <h3 className="text-base font-semibold text-gray-900">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-xs text-gray-500">
+                      {testimonial.role} at {testimonial.company}
+                    </p>
                     <div className="flex items-center mt-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
+                        <Star
+                          key={i}
+                          className="w-3 h-3 text-yellow-400 fill-current"
+                        />
                       ))}
                     </div>
                   </div>
                 </div>
 
-                <p className="text-sm text-gray-600 mb-4 italic line-clamp-3">"{testimonial.quote}"</p>
+                <p className="text-sm text-gray-600 mb-4 italic line-clamp-3">
+                  &quot;{testimonial.quote}&quot;
+                </p>
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2 text-xs font-medium text-blue-600">
@@ -108,7 +111,7 @@ export default function Testimonials() {
 
             {/* Duplicate set for seamless scrolling */}
             {testimonials.map((testimonial, index) => (
-              <div 
+              <div
                 key={`duplicate-${index}`}
                 className="flex-shrink-0 w-[350px] group bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden hover:-translate-y-1 p-6"
               >
@@ -124,17 +127,26 @@ export default function Testimonials() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-base font-semibold text-gray-900">{testimonial.name}</h3>
-                    <p className="text-xs text-gray-500">{testimonial.role} at {testimonial.company}</p>
+                    <h3 className="text-base font-semibold text-gray-900">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-xs text-gray-500">
+                      {testimonial.role} at {testimonial.company}
+                    </p>
                     <div className="flex items-center mt-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
+                        <Star
+                          key={i}
+                          className="w-3 h-3 text-yellow-400 fill-current"
+                        />
                       ))}
                     </div>
                   </div>
                 </div>
 
-                <p className="text-sm text-gray-600 mb-4 italic line-clamp-3">"{testimonial.quote}"</p>
+                <p className="text-sm text-gray-600 mb-4 italic line-clamp-3">
+                  &quot;{testimonial.quote}&quot;
+                </p>
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2 text-xs font-medium text-blue-600">
@@ -165,4 +177,4 @@ export default function Testimonials() {
       </div>
     </section>
   );
-} 
+}

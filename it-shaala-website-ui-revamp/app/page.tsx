@@ -1,4 +1,3 @@
-import Header from "./components/layout/header";
 import Hero from "./components/sections/hero";
 import Features from "./components/sections/features";
 import Courses from "./components/features/courses";

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { ChevronRight } from 'lucide-react';
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
 
 export default function AboutHero() {
   return (
@@ -19,13 +19,14 @@ export default function AboutHero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Empowering Pune's{' '}
-              <span className="text-blue-600">Next Generation</span>{' '}
-              of Coders
+              Empowering Pune&apos;s{" "}
+              <span className="text-blue-600">Next Generation</span> of Coders
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              At IT Shaala, we're passionate about transforming tech education. Our mission is to create
-              opportunities for aspiring developers and bridge the gap between education and industry demands.
+              At IT Shaala, we&apos;re passionate about transforming tech
+              education. Our mission is to create opportunities for aspiring
+              developers and bridge the gap between education and industry
+              demands.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-blue-600 font-semibold cursor-pointer hover:gap-3 transition-all duration-300">

@@ -1,7 +1,7 @@
 import ContactForm from "@/app/components/sections/contact-form";
 import ContactInfo from "@/app/components/sections/contact-info";
 import ContactMap from "@/app/components/sections/contact-map";
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from "lucide-react";
 import CTA from "../components/sections/cta";
 
 export default function ContactPage() {
@@ -15,7 +15,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Have questions? We&apos;d love to hear from you. Send us a message
+              and we&apos;ll respond as soon as possible.
             </p>
           </div>
         </div>
@@ -39,7 +40,12 @@ export default function ContactPage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
               <p className="text-gray-600 mb-2">Mon-Sat: 9AM to 7PM</p>
-              <a href="tel:+919876543210" className="text-blue-600 hover:text-blue-700 block">+91 98765 43210</a>
+              <a
+                href="tel:+919876543210"
+                className="text-blue-600 hover:text-blue-700 block"
+              >
+                +91 98765 43210
+              </a>
             </div>
 
             {/* Email */}
@@ -48,8 +54,15 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">We'll respond within 24 hours</p>
-              <a href="mailto:info@itshaala.com" className="text-blue-600 hover:text-blue-700 block">info@itshaala.com</a>
+              <p className="text-gray-600 mb-2">
+                We&apos;ll respond within 24 hours
+              </p>
+              <a
+                href="mailto:info@itshaala.com"
+                className="text-blue-600 hover:text-blue-700 block"
+              >
+                info@itshaala.com
+              </a>
             </div>
 
             {/* Location */}
@@ -58,8 +71,17 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
-              <p className="text-gray-600 mb-2">University Road, Shivajinagar, Pune</p>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700">Get Directions</a>
+              <p className="text-gray-600 mb-2">
+                University Road, Shivajinagar, Pune
+              </p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
@@ -71,7 +93,9 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-12 items-start max-w-7xl mx-auto">
             {/* Contact Form - Takes up 3 columns */}
             <div className="lg:col-span-3">
-              <h2 className="text-2xl font-semibold mb-8">Send us a <span className="text-blue-600">Message</span></h2>
+              <h2 className="text-2xl font-semibold mb-8">
+                Send us a <span className="text-blue-600">Message</span>
+              </h2>
               <ContactForm />
             </div>
 
@@ -93,13 +117,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <CTA 
+      <CTA
         title="Have More Questions?"
         description="Our team is here to help you with any queries about our courses and career opportunities."
         buttonText="Chat With Us"
         buttonLink="#contact-form"
       />
-
     </main>
   );
 }

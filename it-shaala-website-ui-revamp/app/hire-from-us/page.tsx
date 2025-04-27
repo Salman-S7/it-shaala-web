@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Users, Briefcase, Award, CheckCircle2, Building2, ArrowRight } from 'lucide-react';
-import HiringPartnersMarquee from '../components/sections/hiring-partners';
 import CTA from '../components/sections/cta';
 import Image from 'next/image';
 
@@ -72,7 +71,7 @@ export default function HireFromUs() {
               transition={{ delay: 0.1 }}
               className="text-xl text-gray-600 mb-12"
             >
-              Access a pool of skilled developers trained in the latest technologies and ready to contribute to your organization's success.
+              Access a pool of skilled developers trained in the latest technologies and ready to contribute to your organization&apos;s success.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
