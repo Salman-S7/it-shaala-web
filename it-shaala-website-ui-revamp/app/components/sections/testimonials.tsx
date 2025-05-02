@@ -51,7 +51,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Student <span className="text-blue-600">Success Stories</span>
+            Student <span className="text-blue-600">Testimonials</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Hear from our students who transformed their careers through our
@@ -82,9 +82,7 @@ export default function Testimonials() {
                     <h3 className="text-base font-semibold text-gray-900">
                       {testimonial.name}
                     </h3>
-                    <p className="text-xs text-gray-500">
-                      {testimonial.role} at {testimonial.company}
-                    </p>
+                    
                     <div className="flex items-center mt-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
@@ -100,12 +98,7 @@ export default function Testimonials() {
                   &quot;{testimonial.quote}&quot;
                 </p>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2 text-xs font-medium text-blue-600">
-                    <span>🎯</span>
-                    <span>{testimonial.achievement}</span>
-                  </div>
-                </div>
+                
               </div>
             ))}
 
@@ -130,9 +123,7 @@ export default function Testimonials() {
                     <h3 className="text-base font-semibold text-gray-900">
                       {testimonial.name}
                     </h3>
-                    <p className="text-xs text-gray-500">
-                      {testimonial.role} at {testimonial.company}
-                    </p>
+                   
                     <div className="flex items-center mt-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
@@ -148,12 +139,7 @@ export default function Testimonials() {
                   &quot;{testimonial.quote}&quot;
                 </p>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2 text-xs font-medium text-blue-600">
-                    <span>🎯</span>
-                    <span>{testimonial.achievement}</span>
-                  </div>
-                </div>
+                
               </div>
             ))}
           </div>

@@ -14,10 +14,7 @@ export const courses = [
       'Spring Boot & Spring MVC',
       'React.js & Redux',
       'MySQL & Hibernate',
-      'RESTful APIs',
-      'Microservices Architecture',
-      'Docker & Kubernetes',
-      'AWS Deployment'
+      'RESTful APIs'
     ],
     highlights: [
       'Industry-relevant curriculum',
@@ -47,10 +44,8 @@ export const courses = [
       'Express.js & Node.js',
       'React.js & Redux',
       'RESTful APIs',
-      'Authentication & Authorization',
-      'WebSocket & Real-time Apps',
-      'AWS Deployment',
-      'CI/CD Pipeline'
+      'Authentication & Authorization'
+
     ],
     highlights: [
       'Hands-on projects',
@@ -67,7 +62,7 @@ export const courses = [
   },
   {
     id: 'python-fullstack',
-    title: 'Python Full Stack Development',
+    title: 'Python Full Stack',
     description: 'Learn Python, Django, React, and PostgreSQL to build scalable web applications',
     duration: '4 months',
     students: '300+',
@@ -80,10 +75,7 @@ export const courses = [
       'React.js & Redux',
       'PostgreSQL & ORM',
       'RESTful APIs',
-      'Authentication & Authorization',
-      'WebSocket & Real-time Apps',
-      'AWS Deployment',
-      'Testing & Debugging'
+      'Authentication & Authorization'
     ],
     highlights: [
       'Project-based learning',
