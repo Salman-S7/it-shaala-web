@@ -164,7 +164,7 @@ export default function HireFromUs() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 transform rotate-3 rounded-3xl opacity-10" />
                   <Image
-                    src="/image.png"
+                    src="/students-coding.webp"
                     alt="Students coding"
                     fill
                     className="relative rounded-3xl shadow-2xl object-cover"
