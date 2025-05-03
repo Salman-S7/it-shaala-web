@@ -24,25 +24,25 @@ const placementStats = [
   {
     icon: <GraduationCap className="w-12 h-12 text-blue-600" />,
     title: "Total Students Placed",
-    value: "2000+",
+    value: "150+",
     description: "Students successfully placed in top companies"
   },
   {
     icon: <TrendingUp className="w-12 h-12 text-green-600" />,
     title: "Highest Package",
-    value: "₹25 LPA",
+    value: "₹12 LPA",
     description: "Highest annual package offered to our students"
   },
   {
     icon: <Star className="w-12 h-12 text-yellow-600" />,
     title: "Average Package",
-    value: "₹8 LPA",
+    value: "₹4.5 LPA",
     description: "Average annual package across all placements"
   },
   {
     icon: <Users className="w-12 h-12 text-purple-600" />,
     title: "Hiring Partners",
-    value: "150+",
+    value: "50+",
     description: "Companies actively hiring from our institute"
   }
 ];
@@ -111,25 +111,24 @@ const hiringPartners: HiringPartner[] = [
   }
 ];
 
-
 const placementProcess = [
   {
     step: 1,
-    title: "Resume Building",
-    description: "Professional resume creation with industry experts",
-    icon: <FileText className="w-8 h-8 text-blue-600" />
-  },
-  {
-    step: 2,
     title: "Technical Training",
     description: "Industry-relevant technical skills development",
     icon: <Code className="w-8 h-8 text-green-600" />
   },
   {
-    step: 3,
+    step: 2,
     title: "Mock Interviews",
     description: "Practice interviews with industry professionals",
     icon: <MessageSquare className="w-8 h-8 text-purple-600" />
+  },
+  {
+    step: 3,
+    title: "Resume Building",
+    description: "Professional resume creation with industry experts",
+    icon: <FileText className="w-8 h-8 text-blue-600" />
   },
   {
     step: 4,

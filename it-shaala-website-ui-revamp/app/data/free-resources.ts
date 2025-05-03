@@ -1,58 +1,58 @@
 
 export const videos = [
     {
-      title: "Java Full Stack Development - Complete Roadmap 2024",
-      description: "Learn the complete roadmap to become a Java Full Stack Developer in 2024, including all the essential technologies and skills you need to master.",
+      title: "Mastering Multithreading in Java: Your Essential Guide",
+      description: "Learn the complete roadmap to become a Java Full Stack Developer in 2025, including all the essential technologies and skills you need to master.",
       gradient: "from-blue-500 to-blue-600",
-      duration: "15:30",
-      views: "2.5K",
-      likes: "150",
-      url: "https://www.youtube.com/live/N7uyYvLTWf0?si=zMsOTYLxL916G509"
+      duration: "46:56",
+      views: "158",
+      likes: "2",
+      url: "https://youtu.be/0HptQ-Bp-zQ?si=5YskD0_1JoGB22lj"
     },
     {
-      title: "MERN Stack Development - Complete Course Introduction",
-      description: "Get started with MERN Stack development with this comprehensive introduction covering MongoDB, Express, React, and Node.js fundamentals.",
+      title: "Build Real-World Projects with React.js (Live)",
+      description: "Are you ready to level up your React skills? Join us in this LIVE coding series where we will build real-world React.js projects from scratch.",
       gradient: "from-green-500 to-green-600",
-      duration: "25:45",
-      views: "3.2K",
-      likes: "180",
-      url: "https://youtube.com/watch?v=9Q9Q9Q9Q9Q9"
+      duration: "44:31",
+      views: "663",
+      likes: "10",
+      url: "https://www.youtube.com/live/N7uyYvLTWf0?si=v-DaoFj6x_styAVA"
     },
     {
-      title: "Python Full Stack Development - Django vs Flask",
-      description: "Understand the key differences between Django and Flask frameworks and learn which one is better for your next Python web development project.",
+      title: "Hello World program in Java breakdown",
+      description: "Master java full stack from very basic topics like hello world to building complex applications.",
       gradient: "from-purple-500 to-purple-600",
-      duration: "18:20",
-      views: "1.8K",
-      likes: "120",
-      url: "https://youtube.com/watch?v=7Q7Q7Q7Q7Q7"
+      duration: "01:24:34",
+      views: "386",
+      likes: "7",
+      url: "https://youtu.be/-zj8xyEI0xA?si=fSVk_ZPvxMcVGiEd"
     },
     {
-      title: "How to Become a Full Stack Developer in 2024",
-      description: "A comprehensive guide on how to become a Full Stack Developer in 2024, including the latest technologies, learning path, and career opportunities.",
+      title: "Master HTML, CSS, JavaScript & React from Scratch!",
+      description: "🚀 Ready to take your web development skills to the next level? Join our 15-Day Project Building Series, where we’ll guide you step-by-step to build amazing projects from scratch using HTML, CSS, JavaScript, and React. 💻✨",
       gradient: "from-indigo-500 to-indigo-600",
-      duration: "20:15",
-      views: "4.1K",
-      likes: "210",
-      url: "https://youtube.com/watch?v=6Q6Q6Q6Q6Q6"
+      duration: "31:25",
+      views: "349",
+      likes: "28",
+      url: "https://www.youtube.com/live/V51Fb6x8Jtc?si=4hUBLfBxZ2Nr-5Dn"
     },
     {
-      title: "Java vs Python - Which Language to Learn in 2024?",
-      description: "Detailed comparison between Java and Python programming languages to help you decide which one to learn in 2024 based on your career goals.",
+      title: "Full Stack Java Batch (Hindi/English) | IT Shaala",
+      description: "This is the Open to all session of the complete ONLINE/OFFLINE  Full Stack Java batch.",
       gradient: "from-cyan-500 to-cyan-600",
-      duration: "22:40",
-      views: "3.5K",
-      likes: "190",
+      duration: "01:43:35",
+      views: "530",
+      likes: "11",
       url: "https://youtube.com/watch?v=5Q5Q5Q5Q5Q5"
     },
     {
-      title: "MERN Stack Project - Building a Todo App",
-      description: "Learn MERN Stack development by building a complete Todo application from scratch, including frontend, backend, and database integration.",
+      title: "Java - Day 30 - Inheritance - Core Java",
+      description: "In this session you will learn about concepts regarding inheritance?",
       gradient: "from-teal-500 to-teal-600",
-      duration: "45:30",
-      views: "5.2K",
-      likes: "280",
-      url: "https://youtube.com/watch?v=4Q4Q4Q4Q4Q4"
+      duration: "43:45",
+      views: "293",
+      likes: "6",
+      url: "https://youtu.be/u2oSIvn69_4?si=Gx-1TuNGktXKsGu0"
     }
   ];
   

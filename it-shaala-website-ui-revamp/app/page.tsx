@@ -12,7 +12,6 @@ export default function Home() {
       <Hero />
       <Courses />
       <Features />
-
       <FreeResources />
       <Testimonials />
       <FAQ />

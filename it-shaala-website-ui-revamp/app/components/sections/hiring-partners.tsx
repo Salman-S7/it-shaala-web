@@ -16,6 +16,8 @@ const HiringPartnerCard: React.FC<HiringPartnerCardProps> = ({
       <Image
         src={logo}
         alt={name}
+        width={100}
+        height={50}
         className="max-h-8 max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
       />
     </div>

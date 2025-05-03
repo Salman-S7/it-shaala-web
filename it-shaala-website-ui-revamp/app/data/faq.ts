@@ -9,7 +9,7 @@ export const faqs = [
     },
     {
       question: "What is the duration of the courses?",
-      answer: "Our courses typically range from 3 to 6 months, depending on the program. The Java Full Stack and MERN Stack courses are 6 months long, while the Python Full Stack course is 4 months. Each course includes both theoretical learning and practical project work."
+      answer: "Our courses typically range from 3 to 6 months, depending on the program. The Java Full Stack and MERN Stack courses are 6 months long. Each course includes both theoretical learning and practical project work."
     },
     {
       question: "What kind of projects will I work on during the course?",
@@ -19,17 +19,17 @@ export const faqs = [
       question: "What kind of placement support do you provide?",
       answer: "We provide comprehensive placement support including resume building, mock interviews, technical interview preparation, and job placement assistance. Our dedicated placement team works closely with industry partners to help you secure job opportunities. We also offer career guidance sessions and networking opportunities."
     },
-    {
-      question: "Can I pay the course fee in installments?",
-      answer: "Yes, we offer flexible payment options including EMI facilities and installment plans. We understand that investing in education is important, and we strive to make our courses accessible to everyone. Contact our admissions team to discuss the payment options available."
-    },
+    // {
+    //   question: "Can I pay the course fee in installments?",
+    //   answer: "Yes, we offer flexible payment options including EMI facilities and installment plans. We understand that investing in education is important, and we strive to make our courses accessible to everyone. Contact our admissions team to discuss the payment options available."
+    // },
     {
       question: "What is the class schedule like?",
-      answer: "We offer flexible learning options to suit your schedule. Classes are typically held in the evenings and weekends, with both online and offline options available. Each week includes live sessions, self-paced learning, and hands-on project work. You'll also have access to recorded sessions for revision."
+      answer: "We offer flexible learning options to suit your schedule. Each week includes live sessions, self-paced learning, and hands-on project work. You'll also have access to recorded sessions for revision."
     },
     {
       question: "What kind of support will I get during the course?",
-      answer: "You'll receive 24/7 support through our dedicated Slack community, where you can ask questions and get help from instructors and peers. We also provide one-on-one mentorship sessions, code reviews, and regular doubt-clearing sessions. Our support team is always available to help you with any technical or non-technical queries."
+      answer: "You'll receive 24/7 support, you can ask questions and get help from instructors and peers. We also provide one-on-one mentorship sessions, code reviews, and regular doubt-clearing sessions. Our support team is always available to help you with any technical or non-technical queries."
     },
     {
       question: "What happens after I complete the course?",

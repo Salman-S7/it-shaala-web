@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { Volume2, VolumeX } from 'lucide-react';
 import { useState } from 'react';
@@ -70,6 +72,8 @@ export default function SuccessStories() {
             </motion.div>
           ))}
         </div>
+
+        
 
         {/* View More Button */}
         <div className="text-center mt-12">
