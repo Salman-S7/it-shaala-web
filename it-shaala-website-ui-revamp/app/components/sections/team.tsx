@@ -32,7 +32,7 @@ export default function Team() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our <span className='text-blue-600'>Team</span></h2>
           <p className="text-lg text-gray-600">
             Passionate educators and industry experts dedicated to your success
           </p>

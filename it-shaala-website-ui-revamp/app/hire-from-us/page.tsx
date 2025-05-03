@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Users, Briefcase, Award, CheckCircle2, Building2, ArrowRight } from 'lucide-react';
 import CTA from '../components/sections/cta';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const benefits = [
   {
@@ -53,48 +54,45 @@ const hiringProcess = [
 
 export default function HireFromUs() {
   return (
-    <main>
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white mt-20">
       {/* Hero Section */}
-      <section className="py-28 bg-gradient-to-b from-gray-50 to-white mt-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl font-bold text-gray-900 mb-6"
-            >
-              Hire Top Tech Talent from <span className="text-blue-600">IT Shaala</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-xl text-gray-600 mb-12"
-            >
-              Access a pool of skilled developers trained in the latest technologies and ready to contribute to your organization&apos;s success.
-            </motion.p>
+      <section className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-100">
+        <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10 pointer-events-none"></div>
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="flex justify-center gap-4"
+              transition={{ duration: 0.5 }}
+              className="text-center"
             >
-              <a
-                href="#contact-form"
-                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
-              >
-                Hire Talent Now
-              </a>
-              <a
-                href="#benefits"
-                className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl border border-gray-200"
-              >
-                Learn More
-              </a>
+              <div className="inline-block bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                Hire from us.
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Hire Top Tech Talent from IT Shaala
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Access a pool of skilled developers trained in the latest technologies and ready to contribute to your organization&apos;s success.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/courses"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                >
+                  Contact us now <ArrowRight className="w-5 h-5" />
+                </Link>
+                {/* <button
+                  className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl border border-gray-200"
+                >
+                  View Placements <ChevronRight className="w-5 h-5" />
+                </button> */}
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
+
 
       {/* Benefits Section */}
       <section id="benefits" className="py-20 bg-white">

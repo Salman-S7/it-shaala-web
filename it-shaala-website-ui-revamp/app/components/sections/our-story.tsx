@@ -2,41 +2,43 @@ import { Calendar, Users, Trophy, Target } from "lucide-react";
 
 const timeline = [
   {
-    year: "2020",
+    year: "2023",
     icon: Calendar,
     title: "The Beginning",
     description:
-      "Started with 5 students in a shared workspace, focusing on practical coding education.",
+      "Started with few students, focusing on practical coding education.",
   },
   {
-    year: "2021",
+    year: "2024",
     icon: Users,
     title: "Community Growth",
     description:
       "Expanded to 100+ students and launched our first comprehensive full-stack program.",
   },
   {
-    year: "2022",
+    year: "2025",
     icon: Trophy,
     title: "Industry Recognition",
     description:
-      "Recognized as Pune&quot;s leading coding institute with 95% placement rate.",
+      "Recognized as Pune's leading coding institute with 90% placement rate.",
   },
   {
-    year: "2023",
+    year: "2026",
     icon: Target,
-    title: "Expanding Horizons",
+    title: "Future vision",
     description:
-      "Launched specialized courses in AI/ML and cloud computing. Reached 500+ graduates.",
+      "Aim to become India’s leading tech-education platform with global placement opportunities.",
   },
 ];
+
+
 
 export default function OurStory() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Journey</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our <span className="text-blue-600">Journey</span></h2>
           <p className="text-lg text-gray-600">
             From a small initiative to Pune&quot;s leading tech learning
             community
@@ -48,7 +50,7 @@ export default function OurStory() {
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 md:p-12 rounded-2xl relative overflow-hidden">
             <div className="relative z-10">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Our Mission
+                Our <span className="text-blue-600">Mission</span>
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 To empower aspiring developers with practical, job-ready skills
@@ -59,7 +61,7 @@ export default function OurStory() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
                   { number: "500+", label: "Graduates" },
-                  { number: "95%", label: "Placement Rate" },
+                  { number: "90%", label: "Placement Rate" },
                   { number: "50+", label: "Hiring Partners" },
                   { number: "15+", label: "Industry Experts" },
                 ].map((stat, index) => (

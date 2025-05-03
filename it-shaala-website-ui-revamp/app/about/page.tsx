@@ -6,7 +6,7 @@ import CTA from '../components/sections/cta';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white mt-20">
       <AboutHero />
       <OurStory />
       <Values />

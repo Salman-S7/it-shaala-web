@@ -28,7 +28,7 @@ export default function Values() {
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core <span className="text-blue-600">Values</span></h2>
           <p className="text-lg text-gray-600">
             The principles that guide us in empowering the next generation of developers
           </p>

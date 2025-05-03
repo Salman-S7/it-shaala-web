@@ -1,65 +1,47 @@
-import Image from "next/image";
-import { ChevronRight } from "lucide-react";
+"use client"
+import { ArrowRight } from "lucide-react";
+import { motion } from 'framer-motion';
+import Link from "next/link";
+
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 to-white py-24 overflow-hidden">
-      {/* Background Pattern */}
-      {/* <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" 
-          style={{
-            backgroundImage: 'url("/patterns/grid.svg")',
-            backgroundSize: '30px 30px',
-            backgroundRepeat: 'repeat'
-          }}
-        />
-      </div> */}
-
-      <div className="container mx-auto px-4 mt-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Empowering Pune&apos;s{" "}
-              <span className="text-blue-600">Next Generation</span> of Coders
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              At IT Shaala, we&apos;re passionate about transforming tech
-              education. Our mission is to create opportunities for aspiring
-              developers and bridge the gap between education and industry
-              demands.
-            </p>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 text-blue-600 font-semibold cursor-pointer hover:gap-3 transition-all duration-300">
-                Learn More <ChevronRight className="w-4 h-4" />
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-100">
+        <div className="absolute inset-0 bg-[url('/patterns/dots.svg')] opacity-10 pointer-events-none"></div>
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <div className="inline-block bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                This is our story.
               </div>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/image.png"
-                alt="IT Shaala Learning Environment"
-                fill
-                className="object-cover"
-              />
-            </div>
-            {/* Stats Overlay */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <p className="text-3xl font-bold text-blue-600">500+</p>
-                  <p className="text-sm text-gray-600">Graduates</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-blue-600">95%</p>
-                  <p className="text-sm text-gray-600">Placement Rate</p>
-                </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Empowering Next Generation of Coders
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Our mission is to create opportunities for aspiring developers and bridge the gap between education and industry demands.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/courses"
+                  className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                >
+                  Explore Courses <ArrowRight className="w-5 h-5" />
+                </Link>
+                {/* <button
+                  className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl border border-gray-200"
+                >
+                  View Placements <ChevronRight className="w-5 h-5" />
+                </button> */}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
   );
 }
