@@ -180,11 +180,12 @@ export default function Placements() {
                 >
                   Explore Courses <ArrowRight className="w-5 h-5" />
                 </Link>
-                <button
+                <a
+                  href='#success-stories'
                   className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl border border-gray-200"
                 >
                   View Placements <ChevronRight className="w-5 h-5" />
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -217,7 +218,7 @@ export default function Placements() {
       </section>
 
       {/* Success Stories */}
-      <SuccessStories />
+      <SuccessStories/>
 
       {/* Hiring Partners */}
       <HiringPartnersMarquee hiringPartners={hiringPartners} />
@@ -280,8 +281,8 @@ export default function Placements() {
       <CTA 
         title="Ready to Launch Your Career?"
         description="Join IT Shaala and get placed in top tech companies."
-        buttonText="Start Learning"
-        buttonLink="/enroll"
+        buttonText="Contact us"
+        buttonLink="/contact"
       />
 
     </div>

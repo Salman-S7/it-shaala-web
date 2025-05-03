@@ -58,7 +58,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="relative w-[95%] max-w-lg mx-auto"
+            className="relative w-[95%] max-w-lg mx-auto py-10 md:py-16"
           >
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 border border-white/20">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-purple-600/10 rounded-2xl pointer-events-none" />
@@ -74,7 +74,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="relative space-y-6">
+              <form onSubmit={handleSubmit} className="relative space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Full Name
@@ -86,7 +86,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -102,7 +102,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -118,7 +118,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -133,7 +133,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                     required
                     value={formData.course}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="fullstack">Full Stack Development</option>
                     <option value="frontend">Frontend Development</option>
@@ -151,8 +151,8 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={3}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    rows={2}
+                    className="w-full px-3 py-1.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Any specific questions or requirements?"
                   />
                 </div>
@@ -160,14 +160,14 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <button
                     type="submit"
-                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-lg shadow-blue-600/20"
+                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 shadow-lg shadow-blue-600/20"
                   >
                     Submit Application
                   </button>
                   <button
                     type="button"
                     onClick={onClose}
-                    className="flex-1 bg-white/50 backdrop-blur text-gray-700 px-6 py-3 rounded-xl font-semibold hover:bg-white/80 transition-all duration-300 border border-gray-200"
+                    className="flex-1 bg-white/50 backdrop-blur text-gray-700 px-6 py-2.5 rounded-xl font-semibold hover:bg-white/80 transition-all duration-300 border border-gray-200"
                   >
                     Cancel
                   </button>

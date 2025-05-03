@@ -8,7 +8,7 @@ import {
   // Mail,
   // MapPin, 
   ArrowRight } from "lucide-react";
-import CTA from "../components/sections/cta";
+// import CTA from "../components/sections/cta";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -87,12 +87,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <CTA
+      {/* <CTA
         title="Have More Questions?"
         description="Our team is here to help you with any queries about our courses and career opportunities."
         buttonText="Chat With Us"
         buttonLink="#contact-form"
-      />
+      /> */}
     </main>
   );
 }

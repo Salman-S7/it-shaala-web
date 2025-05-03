@@ -18,8 +18,8 @@ export default function Home() {
       <CTA 
         title="Ready to Start Your Tech Journey?"
         description="Join hundreds of successful students who have transformed their careers with IT Shaala"
-        buttonText="Enroll Now"
-        buttonLink="/enroll"
+        buttonText="Contact us"
+        buttonLink="/contact"
       />
     </main>
   );

@@ -2,6 +2,7 @@
 
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface CTAProps {
   title: string;
@@ -27,7 +28,7 @@ export default function CTA({ title, description, buttonText, buttonLink }: CTAP
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               {title}
             </h2>
             <p className="text-xl text-gray-600 mb-8">
@@ -67,21 +68,22 @@ export default function CTA({ title, description, buttonText, buttonLink }: CTAP
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                href={buttonLink ? buttonLink : "/contact"}
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
               >
-                {buttonText}
+                {buttonText ? buttonText : "Contact us"}
                 <ArrowRight className="w-5 h-5" />
-              </motion.button>
-              <a
-                href={buttonLink}
+              </motion.a>
+              <Link
+                href="/courses"
                 className="px-8 py-4 bg-white text-gray-900 rounded-xl font-semibold border border-gray-200 flex items-center justify-center gap-2 hover:shadow-lg transition-shadow"
               >
                 View More
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </motion.div>
 

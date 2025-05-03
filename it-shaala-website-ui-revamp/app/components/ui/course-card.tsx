@@ -8,7 +8,7 @@ import {
   Users,
   BookOpen,
   Star,
-  // Trophy,
+  // Trophy,  
 } from "lucide-react";
 import Link from "next/link";
 

@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/testimonials"
+                  href="/placements#success-stories"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Success Stories
@@ -205,19 +205,19 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6">
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="text-gray-500 hover:text-blue-600 text-sm transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="/terms-conditions"
                 className="text-gray-500 hover:text-blue-600 text-sm transition-colors"
               >
                 Terms of Service
               </Link>
               <Link
-                href="/refund"
+                href="/refund-policy"
                 className="text-gray-500 hover:text-blue-600 text-sm transition-colors"
               >
                 Refund Policy
