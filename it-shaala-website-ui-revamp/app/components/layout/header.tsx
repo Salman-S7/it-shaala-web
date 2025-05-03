@@ -41,7 +41,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="https://itshaala.com/wp-content/uploads/2024/06/512x512-logo-size-tagline-05-05-e1724735912757.png"
+              src="/it-shaala-logonew.png"
               alt="IT Shaala Logo"
               width={150}
               height={40}

@@ -81,7 +81,7 @@ export default function CourseCard({
       </div>
 
       {/* Course Features */}
-      <div className="p-6">
+      {/* <div className="p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
           What You&apos;ll Learn
         </h3>
@@ -93,10 +93,10 @@ export default function CourseCard({
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* Course Highlights */}
-      <div className="p-6 bg-gray-50">
+      {/* <div className="p-6 bg-gray-50">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
           Course Highlights
         </h3>
@@ -108,7 +108,7 @@ export default function CourseCard({
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* Pricing and CTA */}
       <div className="p-6 border-t">
