@@ -1,14 +1,16 @@
 "use client";
 
-
 import ContactForm from "@/app/components/sections/contact-form";
 import ContactInfo from "@/app/components/sections/contact-info";
 import ContactMap from "@/app/components/sections/contact-map";
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { 
+  // Phone,
+  // Mail,
+  // MapPin, 
+  ArrowRight } from "lucide-react";
 import CTA from "../components/sections/cta";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import Link from "next/link";
-
 
 export default function ContactPage() {
   return (
@@ -28,10 +30,11 @@ export default function ContactPage() {
                 Get in touch.
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Have questions? We&apos;d love to hear from you.
+                Have questions? We&apos;d love to hear from you.
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              It Shaala is always ready to help you. Get in touch with us if you want to learn more.
+                It Shaala is always ready to help you. Get in touch with us if
+                you want to learn more.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -51,64 +54,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-
       {/* Quick Contact Section */}
-      <section className="py-12 bg-gradient-to-r from-gray-50 to-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Phone */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-2">Mon-Sat: 9AM to 7PM</p>
-              <a
-                href="tel:+919876543210"
-                className="text-blue-600 hover:text-blue-700 block"
-              >
-                +91 98765 43210
-              </a>
-            </div>
-
-            {/* Email */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-600 mb-2">
-                We&apos;ll respond within 24 hours
-              </p>
-              <a
-                href="mailto:info@itshaala.com"
-                className="text-blue-600 hover:text-blue-700 block"
-              >
-                info@itshaala.com
-              </a>
-            </div>
-
-            {/* Location */}
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
-              <p className="text-gray-600 mb-2">
-                University Road, Shivajinagar, Pune
-              </p>
-              <a
-                href="https://maps.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-700"
-              >
-                Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* <QuickContact /> */}
 
       {/* Main Contact Section */}
       <section className="py-16 bg-white">
@@ -149,3 +96,64 @@ export default function ContactPage() {
     </main>
   );
 }
+
+// function QuickContact() {
+//   return (
+//     <section className="py-12 bg-gradient-to-r from-gray-50 to-gray-100">
+//       <div className="container mx-auto px-4">
+//         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+//           {/* Phone */}
+//           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+//             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+//               <Phone className="w-6 h-6 text-blue-600" />
+//             </div>
+//             <h3 className="text-lg font-semibold mb-2">Call Us</h3>
+//             <p className="text-gray-600 mb-2">Mon-Sat: 9AM to 7PM</p>
+//             <a
+//               href="tel:+919876543210"
+//               className="text-blue-600 hover:text-blue-700 block"
+//             >
+//               +91 98765 43210
+//             </a>
+//           </div>
+
+//           {/* Email */}
+//           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+//             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+//               <Mail className="w-6 h-6 text-blue-600" />
+//             </div>
+//             <h3 className="text-lg font-semibold mb-2">Email Us</h3>
+//             <p className="text-gray-600 mb-2">
+//               We&apos;ll respond within 24 hours
+//             </p>
+//             <a
+//               href="mailto:info@itshaala.com"
+//               className="text-blue-600 hover:text-blue-700 block"
+//             >
+//               info@itshaala.com
+//             </a>
+//           </div>
+
+//           {/* Location */}
+//           <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+//             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+//               <MapPin className="w-6 h-6 text-blue-600" />
+//             </div>
+//             <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
+//             <p className="text-gray-600 mb-2">
+//               University Road, Shivajinagar, Pune
+//             </p>
+//             <a
+//               href="https://maps.google.com"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="text-blue-600 hover:text-blue-700"
+//             >
+//               Get Directions
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }

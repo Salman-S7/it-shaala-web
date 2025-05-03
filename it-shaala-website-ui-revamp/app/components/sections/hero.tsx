@@ -59,7 +59,7 @@ const Hero = () => {
                 Explore Courses
               </Link>
               <Link
-                href="/contact"
+                href="tel:+918862064497"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-blue-600 bg-white rounded-full hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl border-2 border-blue-600 hover:scale-105"
               >
                 <svg
@@ -77,6 +77,7 @@ const Hero = () => {
                   />
                 </svg>
                 Talk to an Expert
+                {/* +91 88620 64497 */}
               </Link>
             </div>
 

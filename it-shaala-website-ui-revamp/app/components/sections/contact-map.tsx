@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function ContactMap() {
   return (
@@ -7,7 +7,7 @@ export default function ContactMap() {
       <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none z-10" />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/10 to-transparent pointer-events-none z-10" />
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.4175316574847!2d73.8362666!3d18.538007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1eba0c5925f%3A0x3576f560cb461b20!2sIT%20Shaala!5e1!3m2!1sen!2sin!4v1745473084187!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.798471099588!2d73.8362666!3d18.538007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1eba0c5925f%3A0x3576f560cb461b20!2sIT%20Shaala!5e0!3m2!1sen!2sin!4v1746264859808!5m2!1sen!2sin"
         width="100%"
         height="100%"
         style={{ border: 0 }}
@@ -15,7 +15,6 @@ export default function ContactMap() {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-
 
       <div className="absolute bottom-4 right-4">
         <a

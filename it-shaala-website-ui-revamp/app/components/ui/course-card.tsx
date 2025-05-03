@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  CheckCircle2,
+  // CheckCircle2,
   Clock,
   Users,
   BookOpen,
   Star,
-  Trophy,
+  // Trophy,
 } from "lucide-react";
 import Link from "next/link";
 

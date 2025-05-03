@@ -32,7 +32,7 @@ export default function ContactInfo() {
                 Bhamburda, Shivajinagar, Pune, Maharashtra 411005
               </p>
               <Link
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/JHrts8UjEoGrSMVH8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 mt-2 transition-all duration-200 hover:translate-x-1"
@@ -51,17 +51,17 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-medium text-gray-900 mb-1">Phone</h3>
               <p className="text-gray-600 mb-1">
-                <Link href="tel:+919876543210" className="hover:text-blue-600">
-                  +91 98765 43210
+                <Link href="tel:+918862064497" className="hover:text-blue-600">
+                  +91 88620 64497
                 </Link>
               </p>
-              <p className="text-gray-600">
+              {/* <p className="text-gray-600">
                 <Link href="tel:+919876543211" className="hover:text-blue-600">
                   +91 98765 43211
                 </Link>
-              </p>
+              </p> */}
               <Link
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918862064497"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 mt-2 transition-all duration-200 hover:translate-x-1"
@@ -87,14 +87,14 @@ export default function ContactInfo() {
                   info@itshaala.com
                 </Link>
               </p>
-              <p className="text-gray-600">
+              {/* <p className="text-gray-600">
                 <Link
                   href="mailto:admissions@itshaala.com"
                   className="hover:text-blue-600"
                 >
                   admissions@itshaala.com
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
 
