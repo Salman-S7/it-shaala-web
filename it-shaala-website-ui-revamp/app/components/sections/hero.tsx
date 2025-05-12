@@ -1,19 +1,30 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import LazyVideo from "../ui/lazy-video";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center bg-gradient-to-b from-gray-50 to-white overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-b from-gray-50 to-white overflow-hidden pt-20">
+
+      <div className="absolute inset-0 w-full h-full block lg:hidden">
+        <LazyVideo
+          src="https://itshaala.com/wp-content/uploads/2025/03/Sequence-01_1-1.mp4"
+          className="w-full h-full object-cover"
+          poster="/hero-img.webp"
+        />
+        <div className="absolute inset-0 bg-white/5"></div>
+      </div>
+
+
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Main gradient orb */}
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-sky-500 via-indigo-400 to-violet-600 opacity-20 blur-[100px]" />
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] md:w-[600px] md:h-[600px] md:-bottom-40 md:-right-40 rounded-full bg-gradient-to-br from-sky-500 via-indigo-400 to-violet-600 opacity-20 blur-[100px]" />
 
         {/* Secondary gradient orbs */}
-        <div className="absolute top-1/4 -left-20 w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-blue-400 to-cyan-300 opacity-15 blur-[80px]" />
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-gradient-to-bl from-indigo-400 to-purple-500 opacity-15 blur-[90px]" />
+        <div className="absolute top-1/4 -left-10 w-[200px] h-[200px] md:w-[400px] md:h-[400px] md:-left-20 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-300 opacity-15 blur-[80px]" />
+        <div className="absolute -top-20 -right-20 w-[250px] h-[250px] md:w-[500px] md:h-[500px] md:-top-40 md:-right-40 rounded-full bg-gradient-to-bl from-indigo-400 to-purple-500 opacity-15 blur-[90px]" />
 
         {/* Accent elements */}
         <div className="absolute top-1/3 left-1/4 w-2 h-2 rounded-full bg-blue-400 opacity-70 blur-sm" />
@@ -22,22 +33,22 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <div className="text-center lg:text-left space-y-8">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Transform Your Career with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                 IT Shaala
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-gray-600 mb-6 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg lg:text-gray-600 max-w-2xl mx-auto lg:mx-0">
               Learn from industry experts and master in-demand tech skills. Join
               our comprehensive coding classes and kickstart your tech career.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 href="/courses"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg hover:shadow-xl hover:scale-105"
@@ -82,7 +93,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 ">
+            <div className="mt-8 grid grid-cols-3 gap-4">
               <div className="text-center p-4 rounded-xl bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-all">
                 <div className="flex items-center justify-center gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-1">
                   <svg
@@ -150,15 +161,16 @@ const Hero = () => {
 
           {/* Right Content - 3D Illustration */}
           <div className="relative hidden lg:block">
-            <div className="relative w-full h-[400px]">
+            <div className="relative w-full h-[450px] xl:h-[500px]">
               {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 to-indigo-100/30 rounded-3xl blur-2xl -z-10"></div> */}
-              <Image
-                src="/hero-illustration.png"
-                alt="IT Shaala Hero Illustration"
-                fill
-                className="object-cover rounded-3xl shadow-lg"
-                priority
-              />
+              <div className="absolute inset-0 w-full h-full">
+                <LazyVideo
+                  src="https://itshaala.com/wp-content/uploads/2025/03/Sequence-01_1-1.mp4"
+                  className="w-full h-full object-cover rounded-3xl"
+                  poster="/hero-img.webp"
+                />
+                <div className="absolute inset-0 bg-white/5"></div>
+              </div>
             </div>
           </div>
         </div>

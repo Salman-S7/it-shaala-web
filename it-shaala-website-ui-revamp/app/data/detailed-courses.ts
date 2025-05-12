@@ -30,10 +30,10 @@ const courses = {
             "Lifetime access to materials",
         ],
         price: {
-            original: "₹45,000",
-            discounted: "₹35,000",
-            savings: "₹10,000",
-        },
+            original: '₹55,000',
+            discounted: '₹45,000',
+            savings: '₹10,000'
+          },
         curriculum: [
             {
                 title: "Core Java",
@@ -283,10 +283,10 @@ const courses = {
             "Lifetime access to materials",
         ],
         price: {
-            original: "₹40,000",
-            discounted: "₹32,000",
-            savings: "₹8,000",
-        },
+            original: '₹55,000',
+            discounted: '₹45,000',
+            savings: '₹10,000'
+          },
         "curriculum": [
             {
                 "title": "JavaScript Fundamentals",
@@ -493,10 +493,10 @@ const courses = {
             "Lifetime access to materials",
         ],
         price: {
-            original: "₹38,000",
-            discounted: "₹30,000",
-            savings: "₹8,000",
-        },
+            original: '₹55,000',
+            discounted: '₹45,000',
+            savings: '₹10,000'
+          },
         curriculum: [
             {
                 title: "Python Fundamentals",
@@ -610,10 +610,10 @@ const courses = {
             "Lifetime access to materials",
         ],
         price: {
-            original: "₹50,000",
-            discounted: "₹40,000",
-            savings: "₹10,000",
-        },
+            original: '₹55,000',
+            discounted: '₹45,000',
+            savings: '₹10,000'
+          },
         curriculum: [
             {
                 title: "Python for Data Science",
@@ -727,10 +727,10 @@ const courses = {
             "Lifetime access to materials",
         ],
         price: {
-            original: "₹35,000",
-            discounted: "₹28,000",
-            savings: "₹7,000",
-        },
+            original: '₹55,000',
+            discounted: '₹45,000',
+            savings: '₹10,000'
+          },
         curriculum: [
             {
                 title: "Data Analysis Fundamentals",

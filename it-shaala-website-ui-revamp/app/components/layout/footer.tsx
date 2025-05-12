@@ -152,10 +152,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/courses/cloud-computing"
+                  href="/courses/data-analytics"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Cloud Computing
+                 Data Analytics
                 </Link>
               </li>
             </ul>

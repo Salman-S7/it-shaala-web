@@ -24,8 +24,8 @@ export const courses = [
       'Lifetime access to materials'
     ],
     price: {
-      original: '₹45,000',
-      discounted: '₹35,000',
+      original: '₹55,000',
+      discounted: '₹45,000',
       savings: '₹10,000'
     }
   },
@@ -55,9 +55,9 @@ export const courses = [
       'Community access'
     ],
     price: {
-      original: '₹40,000',
-      discounted: '₹32,000',
-      savings: '₹8,000'
+      original: '₹55,000',
+      discounted: '₹45,000',
+      savings: '₹10,000'
     }
   },
   {
@@ -85,9 +85,9 @@ export const courses = [
       'Networking opportunities'
     ],
     price: {
-      original: '₹35,000',
-      discounted: '₹28,000',
-      savings: '₹7,000'
+      original: '₹55,000',
+      discounted: '₹45,000',
+      savings: '₹10,000'
     }
   }
 ];
