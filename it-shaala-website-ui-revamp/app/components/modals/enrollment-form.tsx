@@ -67,7 +67,7 @@ export default function EnrollmentForm({ isOpen, onClose }: EnrollmentFormProps)
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Enroll Now</h2>
                 <button
                   onClick={onClose}
-                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  className="p-2 cursor-pointer hover:rotate-90 hover:bg-gray-100 rounded-full transition-all duration-300"
                 >
                   <X className="w-5 h-5 text-gray-500" />
                 </button>

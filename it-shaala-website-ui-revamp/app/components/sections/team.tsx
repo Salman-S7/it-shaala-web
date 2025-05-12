@@ -8,20 +8,20 @@ const teamMembers = [
     bio: "Tech enthusiast with 10+ years of industry experience in full-stack development"
   },
   {
-    name: "Priya Sharma",
-    role: "Senior Instructor",
+    name: "Poonam Sharma",
+    role: "BDE",
     image: "/team/instructor-1.jpg",
-    bio: "Specialized in frontend development with expertise in React and UI/UX"
+    bio: "Helping students transition into successful tech careers"
   },
   {
-    name: "Rahul Desai",
-    role: "Technical Mentor",
+    name: "Anushka Pagare",
+    role: "Graphics Designer",
     image: "/team/instructor-2.jpg",
-    bio: "Backend specialist with deep knowledge in Node.js and cloud architecture"
+    bio: "Helping students transition into successful tech careers"
   },
   {
-    name: "Anita Patel",
-    role: "Career Coach",
+    name: "Sonali Patane",
+    role: "Career Counceller",
     image: "/team/instructor-3.jpg",
     bio: "Helping students transition into successful tech careers"
   }

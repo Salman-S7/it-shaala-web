@@ -18,16 +18,14 @@ const courses = {
             "React.js & Redux",
             "MySQL & Hibernate",
             "RESTful APIs",
-            "Microservices Architecture",
-            "Docker & Kubernetes",
-            "AWS Deployment",
+            "JDBC",
         ],
         highlights: [
             "Industry-relevant curriculum",
             "Live project experience",
             "Expert mentorship",
             "Placement assistance",
-            "Lifetime access to materials",
+            "Access to study materials",
         ],
         price: {
             original: '₹55,000',
@@ -78,7 +76,7 @@ const courses = {
             },
             {
                 "title": "Advanced Java",
-                "duration": "4 weeks",
+                "duration": "8 weeks",
                 "topics": [
                     "Introduction to JDBC",
                     "JDBC Drivers and Connection Pooling",
@@ -110,7 +108,7 @@ const courses = {
             },
             {
                 "title": "Frontend Development",
-                "duration": "6 weeks",
+                "duration": "12 weeks",
                 "topics": [
                     "Introduction to Web Development",
                     "HTML5 and CSS3 Basics",
@@ -148,7 +146,7 @@ const courses = {
             },
             {
                 "title": "Backend Development",
-                "duration": "6 weeks",
+                "duration": "4 weeks",
                 "topics": [
                     "Introduction to RESTful APIs",
                     "HTTP Methods (GET, POST, PUT, DELETE)",
@@ -177,7 +175,7 @@ const courses = {
                 ]
             },
             {
-                "title": "Database & DevOps",
+                "title": "Database",
                 "duration": "4 weeks",
                 "topics": [
                     "Introduction to Relational Databases (MySQL, PostgreSQL)",
@@ -193,18 +191,6 @@ const courses = {
                     "Database Backup and Recovery",
                     "Database Performance Optimization (Query Tuning)",
                     "Introduction to Docker and Containers",
-                    "Building and Running Docker Containers",
-                    "Docker Networking and Volumes",
-                    "Docker Compose for Multi-container Applications",
-                    "Introduction to Kubernetes",
-                    "Kubernetes Pods, Deployments, and Services",
-                    "Scaling Applications in Kubernetes",
-                    "Setting up CI/CD Pipelines with Jenkins",
-                    "Continuous Integration with GitHub Actions",
-                    "Automating Deployment with CI/CD Tools",
-                    "Monitoring and Logging in DevOps (Prometheus, Grafana)",
-                    "Introduction to AWS for Cloud Deployment",
-                    "Working with AWS EC2, S3, and RDS"
                 ]
             }
         ],
@@ -231,7 +217,7 @@ const courses = {
                 role: "Senior Java Developer",
                 experience: "8+ years",
                 image: "/sandeep-bhingale.png",
-                bio: "John has worked with leading tech companies and has mentored hundreds of students in their journey to becoming full-stack developers.",
+                bio: "Sandeep  Bhingale has worked with leading tech companies and has mentored hundreds of students in their journey to becoming full-stack developers.",
             },
         ],
         testimonials: [
@@ -272,15 +258,14 @@ const courses = {
             "RESTful APIs",
             "Authentication & Authorization",
             "Real-time Applications",
-            "Deployment & DevOps",
-            "Testing & Debugging",
+            "Deployment",
         ],
         highlights: [
             "Industry-relevant curriculum",
             "Live project experience",
             "Expert mentorship",
             "Placement assistance",
-            "Lifetime access to materials",
+            "Access to materials",
         ],
         price: {
             original: '₹55,000',
@@ -414,15 +399,11 @@ const courses = {
                     "Handling Errors in React Applications",
                     "React Context and useContext Hook",
                     "Code Splitting in React (React.lazy, Suspense)",
-                    "Testing React Applications (Jest, React Testing Library)",
                     "Styling in React (CSS Modules, Styled Components, Tailwind CSS)",
                     "React Performance Optimization (Memoization, Lazy Loading)",
-                    "Deploying React Applications (Netlify, Vercel, Heroku)",
+                    "Deploying React Applications (Netlify, Vercel)",
                     "Working with APIs in React",
                     "Managing Side Effects and Async Logic in React",
-                    "Introduction to Server-Side Rendering (SSR) with React",
-                    "React Native for Mobile Development",
-                    "React Testing with Jest and Enzyme"
                 ]
             }
         ],
@@ -445,11 +426,11 @@ const courses = {
         ],
         instructors: [
             {
-                name: "Alex Johnson",
-                role: "Senior MERN Developer",
-                experience: "7+ years",
-                image: "/instructors/alex.jpg",
-                bio: "Alex has worked with leading tech companies and specializes in building scalable MERN applications.",
+                name: "Salman Shaikh",
+                role: "MERN Developer",
+                experience: "3+ years",
+                image: "/salman-shaikh.jpg",
+                bio: "Salman has worked with leading tech companies and specializes in building scalable MERN applications.",
             },
         ],
         testimonials: [

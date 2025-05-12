@@ -16,9 +16,6 @@ import {
   ChevronDown,
   ChevronUp,
   Play,
-  Linkedin,
-  Github,
-  Twitter,
 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -374,7 +371,7 @@ export default function CourseDetail() {
                           <p className="mt-2 text-sm text-gray-600">
                             {instructor.bio}
                           </p>
-                          <div className="mt-3 flex items-center space-x-3">
+                          {/* <div className="mt-3 flex items-center space-x-3">
                             <a
                               href="#"
                               className="text-blue-500 hover:text-blue-600 transition-colors"
@@ -393,7 +390,7 @@ export default function CourseDetail() {
                             >
                               <Twitter className="w-5 h-5" />
                             </a>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     ))}
